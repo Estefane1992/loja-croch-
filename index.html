@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feito a mão</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="estilos/stylemobile.css">
+    </head>
+    
+
+    <body>
+       
+        <nav>
+            
+            <ul id="menu-desktop">
+                <li><a href="contato.html" target="_blank">Contato</a></li>
+                <li><a href="endereço.html" target="_blank">Endereço</a></li>
+                <li><a href="login.html" target="_blank">Login</a></li>
+            </ul> 
+            <div class="container">
+                <ul id="menu-mobile">
+                    <li><a href="contato.html" target="_blank">Contato</a></li>
+                    <li><a href="endereço.html" target="_blank">Endereço</a></li>
+                    <li><a href="login.html" target="_blank">Login</a></li>
+                </ul> 
+            </div>
+        
+            <div id="menu-hamburguer">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5"     stroke="#fff" stroke-width="4"/>
+                    <path d="M0,15 30,15"   stroke="#fff" stroke-width="4"/>
+                    <path d="M0,25 30,25"   stroke="#fff" stroke-width="4"/>
+                </svg>
+            </div> 
+        </nav>
+        <header>
+            <h1>Feito a mão</h1>
+        </header>
+        <main>
+            <section class="apresentação">
+                <section>
+                    <ul class="produtos">
+                        <li class="produtos-descrição">
+                            <img src="produtos/vestido branco.jpg" class="imagens">
+                            <h3 class="texto">Vestido</h3>
+                            <a class="link" href="#">APENAS R$ 400,00</a>  
+                        </li>
+                        
+                        <li>
+                            <img src="produtos/vestido-de-croche-vestido.jpg" class="imagens">
+                            <h3 class="texto">Vestido</h3>
+                            <a class="link" href="#">APENAS R$ 250,00</a>
+                        </li>
+            
+                        <li>
+                            <img src="produtos/conjuto.jpg" class="imagens">
+                            <h3 class="texto">Conjunto</h3>
+                            <a class="link" href="#">APENAS R$ 100,00</a> 
+                        </li>
+                        <li>
+                            <img src="produtos/saida-de-praia-de-croche-biquini.jpg" class="imagens">
+                            <h3 class="texto">Saida de praia</h3>
+                            <a class="link" href="#">APENAS R$ 110,00</a> 
+                        </li>
+                        <li>
+                            <img src="produtos/saia-longa-de-croche-praia-amarela.jpg" class="imagens">
+                            <h3 class="texto">Saia longa</h3>
+                            <a class="link" href="#">APENAS R$ 200,00</a> 
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <ul class="produtos">
+                        <li>
+                            <img src="produtos/toalha-de-mesa-croche.jpg" class="imagens">
+                            <h3 class="texto">Toalha de mesa</h3>
+                            <a class="link" href="#">APENAS R$ 90,00</a> 
+                        </li>
+                    
+                        <li>
+                            <img src="produtos/capa-para-almofada.jpg" class="imagens">
+                            <h3 class="texto">Capa para almofada</h3>
+                            <a class="link" href="#">APENAS R$ 90,00</a>  
+                        </li>
+                        <li>
+                            <img src="produtos/capa-de-cadeira-croche.jpg" class="imagens">
+                            <h3 class="texto">Capa de cadeira</h3>
+                            <a class="link" href="#">APENAS R$ 40,00</a>
+                        </li>
+                        <li>
+                            <img src="produtos/capa-de-botijao-de-gas-croche-capa-de-botijao-de-gas-croche.jpg" class="imagens">
+                            <h3 class="texto">Capa Botijão de gás</h3>
+                            <a class="link" href="#">APENAS R$ 30,00</a>   
+                        </li>
+                        <li>
+                            <img src="produtos/capa-de-maquina-lavar-roupa-12.jpg" class="imagens">
+                            <h3 class="texto">Capa maquina lavar roupa</h3>
+                            <a class="link" href="#">APENAS R$ 60,00</a>   
+                        </li>
+                    </ul>
+                </section>
+            </section>          
+        </main>
+        <script src="_js/jquery.js"></script>
+        <script>
+            $(function() {
+                $("div#menu-hamburguer").click(function() {
+                    $("nav ul#menu-mobile").toggle();
+                });
+            
+                $(window).resize(function() {
+                    var largura = $(window).width(); 
+                    if ( largura >= 701 ) {
+                         $("nav ul#menu-mobile").hide();   
+                     }
+                });
+            });
+        </script>
+    </body>
+</html>

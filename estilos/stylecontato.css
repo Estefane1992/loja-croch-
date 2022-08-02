@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(to right, #E8C8DD,#FDE9FF, #eba8b3c0,#DCC8E8,#E9DBFF);
+    background-attachment: fixed;
+}
+.container{
+    background-color: #fff;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 5px;
+    margin-top: 20vh;
+    border-radius: 10px;
+    text-align: center;
+}
+h1{
+    font-size: 2em;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    margin-top: 3px;
+    font-weight: bold;
+}
+form {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px; 
+}
+form label, form legend {
+    display: block;
+    padding: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    
+}
+.imput-padrao{
+    border: 1px solid black;
+    width: 60%;
+   
+}
+.imput-texto{
+    border: 1px solid black; 
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#social-container i{
+    height: 40px;
+    width: 40px;
+    font-size: 2em;
+    cursor: pointer;
+    line-height: 60px;
+    margin: 2px;
+}
+
+p{
+    font-size: 1em;
+    font-family: Roboto, sans-serif;
+    padding-top: 1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+.checkbox {
+    margin: 20px 0;
+}
+.enviar {
+    width: 50%;
+    background: #73A2BF ;
+    color: #323232;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.enviar:hover {
+    background: #08558b;
+    transform: scale(1.2);
+}
+@media screen and (min-width:300px) and (max-width:700px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 330px;
+        padding: 10px 5px;
+        margin-top: 5vh;
+    }
+}
+
+
